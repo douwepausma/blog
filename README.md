@@ -3,7 +3,7 @@
 Dlog is content focused WordPress theme developed by Douwe Pausma using roots/sage
 </p>
 
-# Build on:
+## Build on:
 <p>
   <a href="https://roots.io/sage/">
     <img alt="Sage" src="https://cdn.roots.io/app/uploads/logo-sage.svg" height="75">
