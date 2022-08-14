@@ -1,6 +1,6 @@
-# Douwe's Blog Theme
+# Dlog
 <p>
-Blog is content focused WordPress theme developed by Douwe Pausma using roots/sage
+Dlog is content focused WordPress theme developed by Douwe Pausma using roots/sage
 </p>
 
 # Build on:
