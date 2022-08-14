@@ -77,3 +77,18 @@ collect(['setup', 'filters', 'nav-walker'])
 */
 
 add_theme_support('sage');
+
+/*
+|--------------------------------------------------------------------------
+| Plugin Update Checker
+|--------------------------------------------------------------------------
+*/
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/douwepausma/dlog/',
+	__FILE__,
+	'dlog'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('stable');
