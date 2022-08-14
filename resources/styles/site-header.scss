@@ -1,0 +1,43 @@
+#site-header {
+    transition: top 150ms ease-in-out;
+    
+    #menu-categories {
+        @apply flex;
+    
+        .nav-item {
+            .nav-link {
+                @apply sm:mr-2;
+            }
+            &:not(.active) {
+                .nav-link {
+                    @apply font-normal hidden md:inline-block;
+        
+                    &:hover {
+                        @apply badge-outline-gray dark:border-gray-700 dark:text-white bg-transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu-mobile { 
+    .menu-mobile_inner {
+        grid-template-columns: 1fr 38px 56px;
+        grid-template-rows: 1fr 56px;
+    }
+    
+    .menu {
+        @apply flex flex-col gap-6;
+    }
+    .search-form {
+        @apply self-center;
+
+        .slash-icon {
+            @apply hidden;
+        }
+
+        input {
+            @apply min-w-full max-w-full pl-3;
+        }
+    }
+}

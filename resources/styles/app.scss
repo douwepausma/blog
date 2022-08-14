@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+// Fonts
+@import 'fonts.scss';
+
+// WordPress / Content styles
+@import 'blocks.scss';
+@import 'wp-classes.scss';
+
+// View styles
+@import 'site-header.scss';
+@import 'search.scss';
+@import 'post.scss';
+@import 'comments.scss';
+
+// Misc
+@import 'tooltip.scss';
+
+// Tailwind Layers
+@layer base {
+    @import 'base/typography';
+}

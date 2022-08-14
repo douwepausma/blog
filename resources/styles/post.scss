@@ -1,0 +1,17 @@
+.entry-image {
+    // Breakout parent, but stay centered.
+    @apply w-screen relative;
+    left: calc(-50vw + 50%);
+
+    // Aspect ratio
+    padding-bottom: calc(1 / 2 * 100vw);
+
+    @screen lg {
+        // Breakout parent, but stay centered.
+        width: theme('screens.lg');
+        left: calc(((theme('screens.lg') / 2) * -1 + 50%));
+
+        // Aspect ratio
+        padding-bottom: calc(1 / 2 * 1024px);
+    }
+}

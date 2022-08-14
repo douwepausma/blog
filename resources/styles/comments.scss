@@ -1,0 +1,77 @@
+#comments {
+    @apply border-t border-gray-300 dark:border-gray-700;
+
+    & > h2 {
+        @apply text-2xl font-bold my-4;
+    }
+
+    .comment-list {
+        @apply pl-0 mb-4 list-none;
+
+        .comment {
+            @apply mb-4;
+
+            .comment-meta {
+                @apply flex items-center;
+
+                .comment-author {
+                    @apply flex;
+
+                    .says {
+                        @apply hidden;
+                    }
+
+                    .fn {
+                        @apply no-underline font-bold text-lg;
+                    }
+
+                    .avatar {
+                        @apply my-0 rounded mr-4;
+                    }
+                }
+
+                .comment-metadata {
+                    @apply ml-4 text-sm italic;
+
+                    .edit-link {
+                        @apply underline;
+                    }
+                }
+            }
+
+            .reply {
+                @apply font-bold;
+            }
+        }
+    }
+
+    .comment-respond {
+        #reply-title {
+            @apply text-xl font-bold;
+        }
+        
+        .required-field-message {
+            @apply hidden;
+        }
+
+        .logged-in-as {
+            @apply mb-4;
+        }
+
+        label {
+            @apply font-bold mt-0;
+        }
+
+        .comment-form-comment {
+            textarea {
+                @apply block rounded-xl bg-transparent border border-gray-300 dark:border-gray-700 px-3 py-[6px] w-full h-32 mb-4;
+            }
+        }
+
+        .form-submit {
+            #submit {
+                @apply btn btn-primary;
+            }
+        }
+    }
+}

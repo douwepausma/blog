@@ -1,0 +1,18 @@
+#search-field {
+    transition-property: width, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+
+    &:hover {
+        @apply border-gray-400;
+    }
+}
+#site-header {
+    &:focus {
+        @apply pl-3 w-64;
+
+        &+.slash-icon {
+            @apply hidden;
+        }
+    }
+}

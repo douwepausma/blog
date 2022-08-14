@@ -1,0 +1,17 @@
+.wp-block-image {
+    @apply rounded-xl overflow-hidden;
+
+    figcaption {
+        @apply text-center;
+    }
+
+    img {
+        @apply my-0;
+    }
+}
+.wp-block-gallery {
+    --wp--style--gallery-gap-default: 1.5rem;
+    figcaption {
+        @apply -mt-4;
+    }
+}
